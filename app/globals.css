@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Slide (parent) */
+.slide-up {
+  animation: slideUp 1.5s ease-out 0.0s forwards;
+  -webkit-animation: slideUp 1.5s ease-out 0.0s forwards;
+}
+
+/* Bubble (child) */
+.bubble {
+  animation: bubble 1.0s ease-out 1.9s forwards;
+  -webkit-animation: bubble 1.0s ease-out 1.9s forwards;
+}
+
+/* Logo */
+.logo-pop {
+  animation: popLogo 0.55s ease-out 2.1s forwards;
+  opacity: 0;
+  -webkit-animation: popLogo 0.55s ease-out 2.1s forwards;
+}
+
+
+ @keyframes slideUp {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.97);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes popLogo {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+} 
