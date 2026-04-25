@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Button from "../../Components/Button"
 
 export default function Home() {
   const images = ["/hewan1.jpg", "/hewan2.jpg", "/hewan3.jpg"];
@@ -68,16 +69,11 @@ export default function Home() {
           Teman terbaik untuk sahabat berbulu
         </p>
 
-        <button
-          onClick={() => router.push("/Auth/Register")}
-          className="mt-10 w-full max-w-[320px] bg-[#F4A340] text-white py-3 rounded-full relative shadow-md"
-        >
-          <span className="absolute left-3 top-1/2 -translate-y-[55%] text-2xl">
-            🐾
-          </span>
-
-          <span className="block text-center font-medium">Buat Akun</span>
-        </button>
+        <Button
+        text="Masuk"
+        className="mt-10"
+        onClick={() => router.push("/Auth/Register")}
+      />
 
         {/* 🔸 LOGIN TEXT */}
         <p className="mt-4 text-sm text-gray-500">

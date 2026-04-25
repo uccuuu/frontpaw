@@ -1,5 +1,10 @@
 "use client"
 
+import Button from "../../Components/Button"
+import FormHuruf from "../../Components/FormHuruf"
+import FormAngka from "../../Components/FormAngka"
+
+
 export default function Register() {
   return (
     <main className="min-h-[100dvh] bg-[#F4EFE6] flex flex-col items-center justify-center px-6">
@@ -19,41 +24,21 @@ export default function Register() {
       <div className="w-full max-w-[300px] space-y-4">
 
         {/* INPUT NAMA */}
-        <input
-          type="text"
-          placeholder="Nama"
-          className="w-full bg-[#E6D1AF] text-gray-700 placeholder-gray-500 px-5 py-2.5 rounded-full outline-none"
-        />
+        <FormHuruf type="text" placeholder="Nama Anda" />
 
         {/* INPUT NO HP (NUMBER PAD) */}
-        <input
-          type="tel"
-          inputMode="numeric"
-          pattern="[0-9]*"
-          placeholder="No. HP"
-          className="w-full bg-[#E6D1AF] text-gray-700 placeholder-gray-500 px-5 py-2.5 rounded-full outline-none"
-        />
+        <FormAngka placeholder="No. HP" />
 
         {/* INPUT EMAIL */}
-        <input
-          type="email"
-          placeholder="Email"
-          className="w-full bg-[#E6D1AF] text-gray-700 placeholder-gray-500 px-5 py-2.5 rounded-full outline-none"
-        />
+        <FormHuruf type="email" placeholder="Email" />
 
         {/* INPUT PASSWORD */}
-        <input
-          type="password"
-          placeholder="Kata sandi"
-          className="w-full bg-[#E6D1AF] text-gray-700 placeholder-gray-500 px-5 py-2.5 rounded-full outline-none"
-        />
+        <FormHuruf type="password" placeholder="Password" />
 
       </div>
 
       {/* 🔹 BUTTON */}
-      <button className="mt-13 w-full max-w-[200px] bg-[#E0A66B] text-white py-2.5 rounded-full font-semibold shadow-md">
-        Buat Akun
-      </button>
+      <Button text="Buat Akun" className="mt-13" />
 
       {/* 🔹 SKIP */}
       <button className="mt-4 text-gray-400 text-sm">
