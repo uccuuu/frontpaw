@@ -83,7 +83,7 @@ export default function Home() {
         <p className="mt-4 text-sm text-gray-500">
           Sudah punya akun?{" "}
           <span
-            onClick={() => router.push("/auth/login")}
+            onClick={() => router.push("/Auth/Login")}
             className="font-semibold text-black cursor-pointer"
           >
             Masuk disini

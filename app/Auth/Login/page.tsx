@@ -2,19 +2,20 @@
 
 export default function Login() {
   return (
-    <main className="min-h-[100dvh] bg-[#F4EFE6] flex flex-col items-center px-6">
+    <main className="min-h-[100dvh] bg-[#F4EFE6] flex flex-col items-center justify-start pt-20 px-6">
 
-      {/* 🔹 LOGO (SAMA SEPERTI REGISTER) */}
-      <div className="flex items-end justify-center w-full h-[25vh] sm:h-[28vh] md:h-[30vh]">
+      {/* 🔹 LOGO PLACEHOLDER */}
+      <div className="mb-10 -mt-17">
+        {/* GANTI IMG INI DENGAN LOGO KAMU */}
         <img 
           src="/logo.png" 
           alt="logo"
-          className="w-[60%] max-w-[300px] object-contain"
+          className="w-[350px] object-contain"
         />
       </div>
 
       {/* 🔹 FORM */}
-      <div className="w-full max-w-[320px] space-y-3 mt-6">
+      <div className="w-full max-w-[320px] space-y-4 -mt-10">
 
         {/* EMAIL */}
         <input
@@ -33,13 +34,9 @@ export default function Login() {
       </div>
 
       {/* 🔹 BUTTON */}
-      <div className="flex flex-col items-center mt-10 gap-3">
-
-        <button className="w-[70%] max-w-[220px] bg-[#E0A66B] text-white py-2.5 rounded-full font-semibold shadow-md">
-          Masuk
-        </button>
-
-      </div>
+      <button className="mt-23 w-full max-w-[200px] bg-[#E0A66B] text-white py-2.5 rounded-full font-semibold shadow-md">
+        Masuk
+      </button>
 
     </main>
   )
