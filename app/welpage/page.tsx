@@ -82,11 +82,12 @@ export default function Home() {
         {/* 🔸 LOGIN TEXT */}
         <p className="mt-4 text-sm text-gray-500">
           Sudah punya akun?{" "}
-          <Link href="/login">
-            <span className="font-semibold text-black cursor-pointer">
-              Masuk disini
-            </span>
-          </Link>
+          <span
+            onClick={() => router.push("/auth/login")}
+            className="font-semibold text-black cursor-pointer"
+          >
+            Masuk disini
+          </span>
         </p>
       </div>
     </main>
