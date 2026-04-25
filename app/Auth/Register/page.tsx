@@ -1,0 +1,65 @@
+"use client"
+
+export default function Register() {
+  return (
+    <main className="min-h-[100dvh] bg-[#F4EFE6] flex flex-col items-center justify-center px-6">
+
+      {/* 🔹 LOGO PLACEHOLDER */}
+      <div className="mb-10 -mt-17">
+        {/* GANTI IMG INI DENGAN LOGO KAMU */}
+        <img 
+          src="/logo.png" 
+          alt="logo"
+          className="w-[350px] object-contain"
+        />
+      </div>
+
+      <div className="flex flex-col items-center -mt-20"></div>
+      {/* 🔹 FORM */}
+      <div className="w-full max-w-[300px] space-y-4">
+
+        {/* INPUT NAMA */}
+        <input
+          type="text"
+          placeholder="Nama"
+          className="w-full bg-[#E6D1AF] text-gray-700 placeholder-gray-500 px-5 py-2.5 rounded-full outline-none"
+        />
+
+        {/* INPUT NO HP (NUMBER PAD) */}
+        <input
+          type="tel"
+          inputMode="numeric"
+          pattern="[0-9]*"
+          placeholder="No. HP"
+          className="w-full bg-[#E6D1AF] text-gray-700 placeholder-gray-500 px-5 py-2.5 rounded-full outline-none"
+        />
+
+        {/* INPUT EMAIL */}
+        <input
+          type="email"
+          placeholder="Email"
+          className="w-full bg-[#E6D1AF] text-gray-700 placeholder-gray-500 px-5 py-2.5 rounded-full outline-none"
+        />
+
+        {/* INPUT PASSWORD */}
+        <input
+          type="password"
+          placeholder="Kata sandi"
+          className="w-full bg-[#E6D1AF] text-gray-700 placeholder-gray-500 px-5 py-2.5 rounded-full outline-none"
+        />
+
+      </div>
+
+      {/* 🔹 BUTTON */}
+      <button className="mt-13 w-full max-w-[200px] bg-[#E0A66B] text-white py-2.5 rounded-full font-semibold shadow-md">
+        Buat Akun
+      </button>
+
+      {/* 🔹 SKIP */}
+      <button className="mt-4 text-gray-400 text-sm">
+        Lewati
+      </button>
+
+    </main>
+  )
+}
