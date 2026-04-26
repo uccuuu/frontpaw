@@ -42,6 +42,30 @@ export default function WelcomingPage() {
                 />
               }
             />
+
+            <ServiceCard
+              label="PawCare"
+              icon={
+                <Image
+                  src="/pawcare.png"
+                  alt="pawcare"
+                  width={45}
+                  height={45}
+                />
+              }
+            />
+
+            <ServiceCard
+              label="PawHealth"
+              icon={
+                <Image
+                  src="/pawhealth.png"
+                  alt="pawhealth"
+                  width={45}
+                  height={45}
+                />
+              }
+            />
             
           </div>
 
