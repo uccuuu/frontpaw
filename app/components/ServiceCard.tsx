@@ -8,7 +8,7 @@ export default function ServiceCard({ icon, label }: ServiceCardProps) {
     <div className="flex flex-col items-center gap-2">
 
       {/* 🔹 ICON BULAT */}
-      <div className="w-16 h-16 bg-[#D9C3A3] rounded-full flex items-center justify-center shadow-md">
+      <div className="w-17 h-17 bg-[#D9C3A3] rounded-full flex items-center justify-center shadow-md">
         {icon}
       </div>
 
