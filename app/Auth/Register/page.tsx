@@ -12,7 +12,9 @@ export default function Register() {
       {/* 🔹 LOGO PLACEHOLDER */}
       <div className="mb-10 -mt-17">
         {/* GANTI IMG INI DENGAN LOGO KAMU */}
-        <img src="/logo.png" alt="logo" className="w-[350px] object-contain" />
+        <img src="/logo.png" 
+            alt="logo" 
+            className="w-[350px] object-contain" />
       </div>
 
       <div className="flex flex-col items-center -mt-20"></div>

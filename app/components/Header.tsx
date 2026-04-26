@@ -1,27 +1,28 @@
-"use client"
+import Image from "next/image"
+import { Search, Bell } from "lucide-react";
 
-export default function HomeHeader() {
+export default function Header() {
   return (
-    <div className="w-full bg-[#DCCEB5] px-5 pt-6 pb-8 flex items-center justify-between">
+    <div className="w-full -mt-2 -ml-1 flex justify-between">
 
       {/* 🔹 LOGO */}
-      <img
+      <Image
         src="/logo.png"
         alt="logo"
-        className="w-[100px] h-[100px] bg-red-500"
+        width={120}
+        height={60}
+        className="w-[100px] sm:w-[130px] md:w-[150px] lg:w-[160px] h-auto object-contain"
       />
 
       {/* 🔹 ICON */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center px-5 gap-3">
 
-        {/* SEARCH */}
-        <button className="w-[clamp(36px,10vw,48px)] h-[clamp(36px,10vw,48px)] bg-[#E0A66B] rounded-full flex items-center justify-center shadow-sm">
-          <span className="text-lg sm:text-xl">🔍</span>
+        <button className="w-10 h-10 bg-[#E0A66B] rounded-full flex items-center justify-center shadow-sm">
+          <Search className="w-6 h-6 md:w-5 md:h-5 text-white" />
         </button>
 
-        {/* NOTIF */}
-        <button className="w-[clamp(36px,10vw,48px)] h-[clamp(36px,10vw,48px)] bg-[#E0A66B] rounded-full flex items-center justify-center shadow-sm">
-          <span className="text-lg sm:text-xl">🔔</span>
+        <button className="w-10 h-10 bg-[#E0A66B] rounded-full flex items-center justify-center shadow-sm">
+          <Bell className="w-6 h-6 md:w-5 md:h-5 text-white" />
         </button>
 
       </div>

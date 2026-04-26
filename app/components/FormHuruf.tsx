@@ -4,7 +4,7 @@ type InputProps = {
   className?: string
 }
 
-export default function Input({ type, placeholder, className }: InputProps) {
+export default function FormHuruf({ type, placeholder, className }: InputProps) {
   return (
     <input
       type={type}

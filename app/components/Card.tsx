@@ -8,7 +8,7 @@ type PetCardProps = {
   gender?: "male" | "female"
 }
 
-export default function PetCard({
+export default function Card({
   image,
   name,
   location,
